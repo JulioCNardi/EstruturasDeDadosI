@@ -26,15 +26,15 @@ namespace StackClass
             return true;
         }
 
-        public int Pop()
+        public string Pop()
         {
             if (top < 0)
             {
                 Console.WriteLine("Stack Underflow");
-                return 0;
+                return "";
             }
 
-            int valor = Int32.Parse(stack[top]);
+            string valor = stack[top];
             top -= 1;
             return valor;
 
